@@ -1,7 +1,10 @@
 @import './sass/variables',
   './sass/header',
   './sass/jumbotron',
-  './sass/form';
+  './sass/form',
+  './sass/section',
+  './sass/pill',
+  './sass/board';
 
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Work+Sans:ital,wght@0,300;0,400;1,600&display=swap");
 * {
@@ -11,6 +14,7 @@
   border: none;
   outline: none;
   font-family: "Work Sans", serif;
+  font-size: 1rem;
 }
 
 html {
