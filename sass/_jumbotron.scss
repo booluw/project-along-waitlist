@@ -6,7 +6,7 @@
   grid-row-gap: 2rem;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 3rem;
 
   &__heading {
     font-size: 2.5rem;  
@@ -45,7 +45,7 @@
   .jumbotron {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 2rem;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 4rem;
 
     &__heading {
       font-size: 4rem;  
@@ -54,11 +54,11 @@
 }
 
 @media screen and ( min-width:  $lg) {
-  .jumbotron { padding: 1.5rem 3.5rem; }  
+  .jumbotron { padding: 1.5rem 5rem; }  
 }
 
 @media screen and ( min-width:  $mxl) {
-  .jumbotron { padding: 1.5rem 5rem; }  
+  .jumbotron { padding: 1.5rem 7rem; }  
 }
 
 @media screen and ( min-width:  $maxl) {
