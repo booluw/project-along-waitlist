@@ -1,0 +1,46 @@
+.header {
+  padding: .5rem;
+  margin: 1rem;
+  background-color: #f8f7f2;
+  border: 1px solid rgba($secondary, .1);
+  border-radius: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: stiky;
+  top: 0;
+
+  &__logo {
+    margin: 0 0 0 1rem;
+    width: 8rem;  
+  }
+
+  &__button {
+    background-color: $secondary;
+    color: $primary;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    font-family: "Work Sans", serif;
+    cursor: pointer;
+    transition: linear .3s;
+    font-weight: 600;
+    outline: 2px solid $secondary;
+    outline-offset: -2px;
+  }
+}
+
+@media screen and ( min-width:  $md) {
+  .header { margin: 1.5rem 2rem; }  
+}
+
+@media screen and ( min-width:  $lg) {
+  .header { margin: 1.5rem 3.5rem; }  
+}
+
+@media screen and ( min-width:  $mxl) {
+  .header { margin: 1.5rem 5rem; }  
+}
+
+@media screen and ( min-width:  $maxl) {
+  .header { margin: 1.5rem 10rem; }  
+}
