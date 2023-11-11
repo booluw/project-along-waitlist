@@ -1,0 +1,66 @@
+.jumbotron {
+  min-height: 83vh;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+
+  &__heading {
+    font-size: 2.5rem;  
+  }
+
+  &__paragraph {
+    font-size: 1.5rem;
+    margin: 1rem 0 2rem;
+    opacity: .8;  
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 3rem 5.5rem;
+
+    &s {position: relative;} 
+  }
+
+  &__button {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    &--absolute {
+      font-weight: bold;
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+    }  
+  }
+
+}
+
+@media screen and ( min-width:  $md) {
+  .jumbotron {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    padding: 1.5rem 2rem;
+
+    &__heading {
+      font-size: 4rem;  
+    }
+  }  
+}
+
+@media screen and ( min-width:  $lg) {
+  .jumbotron { padding: 1.5rem 3.5rem; }  
+}
+
+@media screen and ( min-width:  $mxl) {
+  .jumbotron { padding: 1.5rem 5rem; }  
+}
+
+@media screen and ( min-width:  $maxl) {
+  .jumbotron { padding: 1.5rem 10rem; }  
+}
