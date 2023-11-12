@@ -2,11 +2,8 @@
   display: none;
   flex-direction: column;
   justify-content: center;
+  align-content: flex-start;
   gap: 1.5rem;
-
-  &--active {
-    display: flex;
-  }
 
   &__img {
     width: 100%;
@@ -40,12 +37,8 @@
 
 @media screen and ( min-width:  $md) {
   .board {
-    // padding: 4rem;
-
-    &--active {
-      flex-direction: row;
-      gap: 3rem;  
-    }
+    flex-direction: row;
+    gap: 3rem;
 
     &__img {
       width: 50%;
