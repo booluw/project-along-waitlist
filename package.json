@@ -12,6 +12,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.38.4",
     "animejs": "^3.2.1",
     "gsap": "^3.12.2",
     "letterizejs": "^2.0.1",

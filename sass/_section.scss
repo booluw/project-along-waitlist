@@ -19,12 +19,31 @@
   &__content {
     background-color: $secondary;
     color: white;
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 10px 25px 1px rgba($secondary, .3);
+    overflow: hidden;
+    position: relative;
 
     & .section__heading {color: $primary;} 
-    & .section__paragraph {opacity: .7;} 
+    & .section__paragraph {opacity: .7;}
+
+    & .form {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+
+      &__input {
+        padding: 1rem;  
+      }  
+    }
+
+    & .section__img {
+      position: absolute;
+      bottom: -1rem;
+      right: .5rem;
+      width: 5rem;  
+    }
   }
 
   &__paragraph {
@@ -46,7 +65,22 @@
 
     &__content {
       padding: 2rem;
-      border-radius: 1.2rem;  
+      border-radius: 1.2rem;
+
+      & .section__img {
+        bottom: 1.5rem;
+        right: 1rem;
+      }
+
+      & .form {
+        flex-direction: row;
+        width: auto;
+        gap: 1rem;
+
+        &__input {
+          padding: 1rem;  
+        }  
+      }  
     }
   }
 }
