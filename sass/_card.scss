@@ -1,0 +1,50 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: .5rem;
+  background-color: rgba($secondary, .1);
+  border-radius: .3rem;
+  height: 18em;
+  cursor: pointer;
+  overflow: hidden;
+
+  &__img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7rem 10rem;
+    border-radius: .2rem;
+    transition: linear .1s;  
+  }
+
+  &__content {
+    margin: .7rem 0;  
+  }
+
+  &__text { opacity: 0; margin: .5rem 0 0; }
+  
+  &__button {
+    display: block; 
+    padding: .5rem;
+    margin: .5rem 0 0;
+    background-color: transparent;
+    color: $link;
+    font-weight: 600;
+    cursor: pointer; 
+  }
+
+  &-container {
+    display: flex;
+    align-items: center ; 
+    gap: 1rem;
+    flex-direction: column;
+    margin: 2rem 0 0;  
+  }
+}
+
+
+@media screen and ( min-width:  $md) {
+  .card {
+
+    &-container { flex-direction: row; }
+  }  
+}

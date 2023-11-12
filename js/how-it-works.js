@@ -15,7 +15,7 @@ export const showActivePill = function (element = activePill) {
       {
         display: "none",
         opacity: 0.7,
-        duration: 3,
+        duration: .3,
         translateY: "-10px",
         ease: "sine.out",
       },
